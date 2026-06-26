@@ -1,0 +1,54 @@
+{
+  "name": "John Francois Lamsen",
+  "title": "Software Engineer",
+  "bio": "Full-stack software engineer with 2+ years of experience building scalable web applications. Passionate about component-driven architecture, developer tooling, and performance optimization.",
+  "email": "johnfrancoistlamsen873@gmail.com",
+  "status": "Open to opportunities",
+  "metadata": {
+    "title": "John Francois Lamsen | Software Engineer",
+    "description": "Professional portfolio and resume of John Francois Lamsen — full-stack software engineer specializing in React, TypeScript, and scalable web applications."
+  },
+  "navLinks": [
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Achievements", "href": "#achievements" },
+    { "label": "Audits", "href": "#audits" }
+  ],
+  "footer": {
+    "copyright": "John Francois Lamsen",
+    "builtWith": "Next.js · Driven by data"
+  },
+  "sections": [
+    {
+      "id": "experience",
+      "title": "Experience",
+      "subtitle": "Professional journey and contributions"
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "subtitle": "Selected work and side projects"
+    },
+    {
+      "id": "skills",
+      "title": "Skills",
+      "subtitle": "Technologies and tools I work with"
+    },
+    {
+      "id": "achievements",
+      "title": "Achievements",
+      "subtitle": "Certifications, awards, and milestones"
+    },
+    {
+      "id": "audits",
+      "title": "Technical Audits",
+      "subtitle": "Performance, security, and quality reviews"
+    },
+    {
+      "id": "work-history",
+      "title": "Work Log",
+      "subtitle": "Recent milestones and contributions"
+    }
+  ]
+}

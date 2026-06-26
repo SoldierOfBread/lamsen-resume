@@ -1,23 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import type { NavLink } from "@/lib/types";
 
-const navLinks = [
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Achievements", href: "#achievements" },
-  { label: "Audits", href: "#audits" },
-];
+interface HeaderProps {
+  name: string;
+  navLinks: NavLink[];
+}
 
-export function Header() {
+export function Header({ name, navLinks }: HeaderProps) {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-primary/10 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
         <a href="#" className="text-lg font-bold text-primary">
-          J.D.
+          {name.split(" ").map((n) => n[0]).join(".")}
         </a>
 
         <button

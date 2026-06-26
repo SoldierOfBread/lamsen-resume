@@ -52,3 +52,32 @@ export interface WorkHistory {
   date: string;
   type: "contribution" | "feature" | "milestone" | "log";
 }
+
+export interface NavLink {
+  label: string;
+  href: string;
+}
+
+export interface SectionConfig {
+  id: string;
+  title: string;
+  subtitle: string;
+}
+
+export interface SiteConfig {
+  name: string;
+  title: string;
+  bio: string;
+  email: string;
+  status: string;
+  metadata: {
+    title: string;
+    description: string;
+  };
+  navLinks: NavLink[];
+  footer: {
+    copyright: string;
+    builtWith: string;
+  };
+  sections: SectionConfig[];
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { getSiteConfig } from "@/lib/data";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,10 +13,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const site = getSiteConfig();
+
 export const metadata: Metadata = {
-  title: "John Doe | Software Engineer",
-  description:
-    "Professional portfolio and resume of John Doe — full-stack software engineer specializing in React, TypeScript, and scalable web applications.",
+  title: site.metadata.title,
+  description: site.metadata.description,
 };
 
 export default function RootLayout({

@@ -4,7 +4,12 @@ import skillsData from "@/data/skills.json";
 import achievementsData from "@/data/achievements.json";
 import auditLogsData from "@/data/audit-logs.json";
 import workHistoryData from "@/data/work-history.json";
-import type { Project, Experience, Skill, Achievement, AuditLog, WorkHistory } from "./types";
+import siteData from "@/data/site.json";
+import type { Project, Experience, Skill, Achievement, AuditLog, WorkHistory, SiteConfig } from "./types";
+
+export function getSiteConfig(): SiteConfig {
+  return siteData as SiteConfig;
+}
 
 export function getProjects(): Project[] {
   return projectsData as Project[];

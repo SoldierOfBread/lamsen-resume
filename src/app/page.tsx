@@ -7,6 +7,7 @@ import { SkillBadge } from "@/components/SkillBadge";
 import { AchievementCard } from "@/components/AchievementCard";
 import { AuditLogItem } from "@/components/AuditLogItem";
 import {
+  getSiteConfig,
   getProjects,
   getExperience,
   getSkills,
@@ -16,6 +17,7 @@ import {
 } from "@/lib/data";
 
 export default function Home() {
+  const site = getSiteConfig();
   const projects = getProjects();
   const experience = getExperience();
   const skills = getSkills();
@@ -24,13 +26,15 @@ export default function Home() {
   const workHistory = getWorkHistory();
 
   const categories = [...new Set(skills.map((s) => s.category))];
+  const section = (id: string) => site.sections.find((s) => s.id === id)!;
 
   return (
     <>
-      <Header />
+      <Header name={site.name} navLinks={site.navLinks} />
       <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-20 px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
-        <HeroSection />
-        <SectionWrapper id="experience" title="Experience" subtitle="Professional journey and contributions">
+        <HeroSection name={site.name} title={site.title} bio={site.bio} email={site.email} status={site.status} />
+
+        <SectionWrapper id="experience" title={section("experience").title} subtitle={section("experience").subtitle}>
           <ol className="relative">
             {experience.map((exp) => (
               <TimelineEntry key={exp.id} {...exp} />
@@ -38,7 +42,7 @@ export default function Home() {
           </ol>
         </SectionWrapper>
 
-        <SectionWrapper id="projects" title="Projects" subtitle="Selected work and side projects">
+        <SectionWrapper id="projects" title={section("projects").title} subtitle={section("projects").subtitle}>
           <div className="grid gap-6 sm:grid-cols-2">
             {projects.map((project) => (
               <ProjectCard key={project.id} {...project} />
@@ -46,7 +50,7 @@ export default function Home() {
           </div>
         </SectionWrapper>
 
-        <SectionWrapper id="skills" title="Skills" subtitle="Technologies and tools I work with">
+        <SectionWrapper id="skills" title={section("skills").title} subtitle={section("skills").subtitle}>
           <div className="flex flex-col gap-8">
             {categories.map((category) => (
               <div key={category}>
@@ -65,7 +69,7 @@ export default function Home() {
           </div>
         </SectionWrapper>
 
-        <SectionWrapper id="achievements" title="Achievements" subtitle="Certifications, awards, and milestones">
+        <SectionWrapper id="achievements" title={section("achievements").title} subtitle={section("achievements").subtitle}>
           <div className="grid gap-4 sm:grid-cols-2">
             {achievements.map((achievement) => (
               <AchievementCard key={achievement.id} {...achievement} />
@@ -73,7 +77,7 @@ export default function Home() {
           </div>
         </SectionWrapper>
 
-        <SectionWrapper id="audits" title="Technical Audits" subtitle="Performance, security, and quality reviews">
+        <SectionWrapper id="audits" title={section("audits").title} subtitle={section("audits").subtitle}>
           <div className="grid gap-4 sm:grid-cols-2">
             {auditLogs.map((log) => (
               <AuditLogItem key={log.id} {...log} />
@@ -81,7 +85,7 @@ export default function Home() {
           </div>
         </SectionWrapper>
 
-        <SectionWrapper id="work-history" title="Work Log" subtitle="Recent milestones and contributions">
+        <SectionWrapper id="work-history" title={section("work-history").title} subtitle={section("work-history").subtitle}>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {workHistory.map((entry) => (
               <div
@@ -101,34 +105,40 @@ export default function Home() {
           </div>
         </SectionWrapper>
       </main>
-      <Footer />
+      <Footer copyright={site.footer.copyright} builtWith={site.footer.builtWith} />
     </>
   );
 }
 
-function HeroSection() {
+interface HeroSectionProps {
+  name: string;
+  title: string;
+  bio: string;
+  email: string;
+  status: string;
+}
+
+function HeroSection({ name, title, bio, email, status }: HeroSectionProps) {
   return (
     <section className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl font-bold tracking-tight text-primary md:text-5xl lg:text-6xl">
-          John Doe
+          {name}
         </h1>
         <p className="text-lg font-medium text-secondary md:text-xl">
-          Software Engineer
+          {title}
         </p>
       </div>
       <p className="max-w-2xl text-sm leading-relaxed text-primary/60 md:text-base">
-        Full-stack software engineer with 5+ years of experience building
-        scalable web applications. Passionate about component-driven
-        architecture, developer tooling, and performance optimization.
+        {bio}
       </p>
       <div className="flex flex-wrap gap-3">
         <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary">
           <span className="h-2 w-2 rounded-full bg-accent" />
-          Open to opportunities
+          {status}
         </span>
         <a
-          href="mailto:john@example.com"
+          href={`mailto:${email}`}
           className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-sm font-medium text-white transition-colors hover:bg-secondary/90"
         >
           Get in touch
