@@ -1,0 +1,44 @@
+[
+  {
+    "id": "wh-component-lib",
+    "title": "Component Library v2 Launch",
+    "description": "Released version 2 of the internal component library with 20 new components, dark mode support, and comprehensive Storybook documentation.",
+    "date": "2024-05",
+    "type": "milestone"
+  },
+  {
+    "id": "wh-migration-done",
+    "title": "Legacy API Migration Complete",
+    "description": "Completed migration of 15 legacy REST endpoints to the new GraphQL API, enabling deprecation of the previous API version.",
+    "date": "2024-03",
+    "type": "contribution"
+  },
+  {
+    "id": "wh-feature-search",
+    "title": "Advanced Search Feature",
+    "description": "Implemented full-text search with faceted filtering, autocomplete suggestions, and saved search functionality using Elasticsearch.",
+    "date": "2023-12",
+    "type": "feature"
+  },
+  {
+    "id": "wh-code-coverage",
+    "title": "Achieved 90% Code Coverage",
+    "description": "Led a team-wide initiative to increase frontend test coverage from 45% to 90% over 3 months through unit, integration, and E2E testing.",
+    "date": "2023-09",
+    "type": "milestone"
+  },
+  {
+    "id": "wh-monitoring",
+    "title": "Frontend Monitoring Setup",
+    "description": "Set up comprehensive frontend monitoring with Sentry for error tracking and custom RUM metrics for performance monitoring.",
+    "date": "2023-07",
+    "type": "feature"
+  },
+  {
+    "id": "wh-tech-debt",
+    "title": "Tech Debt Reduction Sprint",
+    "description": "Organized and executed a 2-week tech debt sprint, refactoring 30+ files, removing 5k lines of dead code, and upgrading 12 core dependencies.",
+    "date": "2023-05",
+    "type": "log"
+  }
+]

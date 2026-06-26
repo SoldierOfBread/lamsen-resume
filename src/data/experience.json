@@ -1,0 +1,50 @@
+[
+  {
+    "id": "senior-eng-acme",
+    "role": "Senior Software Engineer",
+    "company": "Acme Corp",
+    "location": "San Francisco, CA",
+    "startDate": "Jan 2023",
+    "endDate": "Present",
+    "description": "Lead the frontend architecture team, driving adoption of modern web standards and component-driven development practices across 5 product teams.",
+    "contributions": [
+      "Architected and delivered a component library serving 5 product teams",
+      "Mentored 4 junior engineers through structured code review and pair programming",
+      "Led migration from class components to hooks, reducing bundle size by 25%",
+      "Established performance budgets and monitoring, improving Lighthouse score from 65 to 92"
+    ],
+    "technologies": ["React", "TypeScript", "Next.js", "Storybook", "Playwright"]
+  },
+  {
+    "id": "fullstack-beta",
+    "role": "Full Stack Developer",
+    "company": "Beta Technologies",
+    "location": "Austin, TX",
+    "startDate": "Jun 2021",
+    "endDate": "Dec 2022",
+    "description": "Built and maintained customer-facing web applications serving 50k+ daily active users. Collaborated closely with design and product teams.",
+    "contributions": [
+      "Delivered 15+ major features across 2 product lines in 18 months",
+      "Implemented GraphQL API layer reducing over-fetching by 60%",
+      "Built real-time collaboration features using WebSockets and CRDTs",
+      "Reduced CI pipeline execution time from 22 minutes to 6 minutes"
+    ],
+    "technologies": ["Node.js", "React", "GraphQL", "PostgreSQL", "Docker"]
+  },
+  {
+    "id": "frontend-gamma",
+    "role": "Frontend Developer",
+    "company": "Gamma Studios",
+    "location": "New York, NY",
+    "startDate": "Mar 2019",
+    "endDate": "May 2021",
+    "description": "Developed responsive, accessible web applications for a portfolio of 10+ client projects across e-commerce, education, and healthcare sectors.",
+    "contributions": [
+      "Delivered 10+ client projects on time and within budget",
+      "Built reusable component libraries reducing project setup time by 40%",
+      "Implemented accessibility audits and remediation, achieving WCAG 2.1 AA compliance",
+      "Introduced automated visual regression testing with Chromatic"
+    ],
+    "technologies": ["React", "JavaScript", "Sass", "Jest", "Cypress"]
+  }
+]

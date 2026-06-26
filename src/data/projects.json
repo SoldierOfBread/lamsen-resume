@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ecommerce-platform",
+    "title": "E-Commerce Platform",
+    "description": "Built a full-featured e-commerce platform with product catalog, cart, checkout, and payment integration. Implemented server-side rendering for SEO optimization and real-time inventory tracking.",
+    "technologies": ["Next.js", "TypeScript", "PostgreSQL", "Stripe", "Redis"],
+    "highlights": [
+      "Reduced page load times by 40% through SSR and image optimization",
+      "Implemented real-time inventory management with WebSocket updates",
+      "Achieved 98% test coverage across critical user flows"
+    ],
+    "url": "https://example.com/ecommerce",
+    "status": "completed"
+  },
+  {
+    "id": "analytics-dashboard",
+    "title": "Real-Time Analytics Dashboard",
+    "description": "Developed an interactive analytics dashboard for business intelligence, featuring custom chart components, data filtering, and CSV export functionality.",
+    "technologies": ["React", "D3.js", "Node.js", "WebSocket", "MongoDB"],
+    "highlights": [
+      "Processed 10k+ events/sec with real-time visualization",
+      "Designed reusable chart component library used across 3 products",
+      "Reduced report generation time from minutes to seconds"
+    ],
+    "repository": "https://github.com/example/analytics",
+    "status": "maintained"
+  },
+  {
+    "id": "ci-cd-pipeline",
+    "title": "CI/CD Pipeline Automation",
+    "description": "Designed and implemented a comprehensive CI/CD pipeline using GitHub Actions and Docker, enabling automated testing, building, and deployment across multiple environments.",
+    "technologies": ["GitHub Actions", "Docker", "AWS", "Terraform", "Bash"],
+    "highlights": [
+      "Reduced deployment time from 45 minutes to 8 minutes",
+      "Achieved zero-downtime deployments with blue-green strategy",
+      "Automated infrastructure provisioning for 3 environments"
+    ],
+    "status": "completed"
+  },
+  {
+    "id": "microservices-migration",
+    "title": "Microservices Migration",
+    "description": "Led the migration of a monolithic application to a microservices architecture, improving scalability and team autonomy across 4 delivery squads.",
+    "technologies": ["Node.js", "GraphQL", "Kubernetes", "Kafka", "Docker"],
+    "highlights": [
+      "Decomposed monolith into 12 independent microservices",
+      "Improved system scalability to handle 5x traffic increase",
+      "Established API contracts and shared library ecosystem"
+    ],
+    "status": "completed"
+  }
+]

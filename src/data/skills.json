@@ -1,0 +1,17 @@
+[
+  { "id": "react", "name": "React", "category": "Frontend", "level": "expert" },
+  { "id": "typescript", "name": "TypeScript", "category": "Language", "level": "expert" },
+  { "id": "nextjs", "name": "Next.js", "category": "Frontend", "level": "advanced" },
+  { "id": "nodejs", "name": "Node.js", "category": "Backend", "level": "advanced" },
+  { "id": "postgresql", "name": "PostgreSQL", "category": "Database", "level": "advanced" },
+  { "id": "graphql", "name": "GraphQL", "category": "Backend", "level": "advanced" },
+  { "id": "docker", "name": "Docker", "category": "DevOps", "level": "advanced" },
+  { "id": "kubernetes", "name": "Kubernetes", "category": "DevOps", "level": "intermediate" },
+  { "id": "aws", "name": "AWS", "category": "DevOps", "level": "intermediate" },
+  { "id": "python", "name": "Python", "category": "Language", "level": "intermediate" },
+  { "id": "tailwind", "name": "Tailwind CSS", "category": "Frontend", "level": "advanced" },
+  { "id": "testing", "name": "Testing (Jest, Playwright)", "category": "Testing", "level": "advanced" },
+  { "id": "redis", "name": "Redis", "category": "Database", "level": "intermediate" },
+  { "id": "kafka", "name": "Kafka", "category": "Backend", "level": "intermediate" },
+  { "id": "terraform", "name": "Terraform", "category": "DevOps", "level": "intermediate" }
+]

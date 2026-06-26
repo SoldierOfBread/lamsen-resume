@@ -1,0 +1,37 @@
+[
+  {
+    "id": "aws-saa",
+    "title": "AWS Solutions Architect Associate",
+    "description": "Earned AWS Solutions Architect certification demonstrating expertise in designing distributed systems on AWS.",
+    "date": "2024-03",
+    "type": "certification"
+  },
+  {
+    "id": "oss-contributor",
+    "title": "Top Open Source Contributor",
+    "description": "Recognized as a top contributor to the Next.js ecosystem with 150+ merged PRs and 2 core framework features.",
+    "date": "2023-11",
+    "type": "award"
+  },
+  {
+    "id": "conference-speaker",
+    "title": "Conference Speaker - ReactConf 2023",
+    "description": "Presented 'Building Resilient Frontends' at ReactConf 2023, with 300+ attendees and featured in the conference highlights reel.",
+    "date": "2023-09",
+    "type": "milestone"
+  },
+  {
+    "id": "tech-blog",
+    "title": "Published Technical Blog Series",
+    "description": "Published a 5-part series on microservices frontend architecture, accumulating 50k+ reads and featured on the company engineering blog.",
+    "date": "2023-06",
+    "type": "publication"
+  },
+  {
+    "id": "kubernetes-ckad",
+    "title": "Certified Kubernetes Application Developer",
+    "description": "Earned CKAD certification validating proficiency in designing and deploying applications on Kubernetes.",
+    "date": "2024-01",
+    "type": "certification"
+  }
+]

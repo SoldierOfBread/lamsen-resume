@@ -1,0 +1,42 @@
+[
+  {
+    "id": "audit-perf-2024",
+    "title": "Performance Optimization Audit",
+    "description": "Conducted a comprehensive performance audit of the main web application, identifying and remediating 12 critical performance bottlenecks.",
+    "date": "2024-04",
+    "impact": "high",
+    "category": "Performance"
+  },
+  {
+    "id": "audit-a11y-2024",
+    "title": "Accessibility Compliance Audit",
+    "description": "Performed WCAG 2.1 AA audit across all product pages. Remediated 45 accessibility issues across 8 core page templates.",
+    "date": "2024-02",
+    "impact": "high",
+    "category": "Accessibility"
+  },
+  {
+    "id": "audit-sec-2024",
+    "title": "Security Dependency Audit",
+    "description": "Audited 200+ direct and transitive dependencies for security vulnerabilities. Upgraded 35 packages and removed 8 deprecated dependencies.",
+    "date": "2024-01",
+    "impact": "high",
+    "category": "Security"
+  },
+  {
+    "id": "audit-bundle-2023",
+    "title": "Bundle Size Analysis",
+    "description": "Analyzed JavaScript bundle composition using webpack-bundle-analyzer. Identified and eliminated 400KB of dead code through tree-shaking improvements.",
+    "date": "2023-10",
+    "impact": "medium",
+    "category": "Performance"
+  },
+  {
+    "id": "audit-api-2023",
+    "title": "API Performance Audit",
+    "description": "Audited 25 API endpoints for response times and error rates. Optimized N+1 queries and implemented Redis caching for high-traffic endpoints.",
+    "date": "2023-08",
+    "impact": "medium",
+    "category": "Backend"
+  }
+]
